@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社SJ ― 宿泊運営会社様のための現場実務パートナー</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Noto Sans JP', sans-serif; color: #241541; background: #fff; }
+  a { text-decoration: none; }
+  @keyframes sjBlobA { 0%,100% { border-radius: 42% 58% 65% 35% / 45% 40% 60% 55%; } 50% { border-radius: 60% 40% 35% 65% / 55% 60% 40% 45%; } }
+  @keyframes sjBlobB { 0%,100% { border-radius: 65% 35% 45% 55% / 40% 60% 40% 60%; } 50% { border-radius: 40% 60% 60% 40% / 60% 40% 60% 40%; } }
+  .fade { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
+  .fade.in { opacity: 1; transform: translateY(0); }
+  .card-hover:hover { box-shadow: 0 12px 32px rgba(58,34,100,0.14); transform: translateY(-4px); }
+  .soft-link:hover { background:#3a2264 !important; }
+  .article-card:hover { box-shadow: 0 8px 24px rgba(58,34,100,0.1); }
+  .btn-primary:hover { background:#4a2d7d !important; }
+  .nav-link:hover { color:#5f3aa0 !important; }
+
+  @media (max-width: 900px) {
+    .hero-split { grid-template-columns: 1fr !important; }
+    .hero-visual { display: none; }
+    .pain-grid { grid-template-columns: 1fr !important; }
+    .reasons-grid { grid-template-columns: 1fr !important; }
+    .business-grid { grid-template-columns: 1fr !important; }
+    .hard-grid { grid-template-columns: 1fr 1fr !important; }
+    .results-grid { grid-template-columns: 1fr !important; }
+    .articles-grid { grid-template-columns: 1fr !important; }
+    .nav-links { display: none !important; }
+    section, .pad { padding-left: 24px !important; padding-right: 24px !important; }
+  }
+</style>
+</head>
+<body>
+
+<section style="position:relative; max-width:1440px; margin:0 auto; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <div class="pad" style="display:flex; align-items:center; justify-content:space-between; padding:20px 60px; border-bottom:1px solid #efe7fa;">
+    <div style="font-size:17px; font-weight:900; color:#3a2264; letter-spacing:0.02em;">株式会社SJ</div>
+    <div style="display:flex; align-items:center; gap:36px;">
+      <nav class="nav-links" style="display:flex; align-items:center; gap:28px;">
+        <a href="#reasons" class="nav-link" style="font-size:13px; font-weight:700; color:#4a3a6a;">選ばれる理由</a>
+        <a href="#business" class="nav-link" style="font-size:13px; font-weight:700; color:#4a3a6a;">事業内容</a>
+        <a href="#results" class="nav-link" style="font-size:13px; font-weight:700; color:#4a3a6a;">実績</a>
+        <a href="#company" class="nav-link" style="font-size:13px; font-weight:700; color:#4a3a6a;">会社概要</a>
+      </nav>
+      <a href="/cdn-cgi/l/email-protection#355c5b535a75465f565a1b5f45" class="btn-primary" style="font-size:13px; font-weight:700; color:#fff; background:#5f3aa0; padding:11px 26px; border-radius:100px;">無料相談・現地調査</a>
+    </div>
+  </div>
+
+  <!-- HERO SPLIT -->
+  <div class="hero-split" style="display:grid; grid-template-columns:1.1fr 0.9fr; min-height:600px;">
+    <div class="pad" style="padding:100px 70px; display:flex; flex-direction:column; justify-content:center;">
+      <div style="font-size:12px; letter-spacing:0.25em; color:#7a52bf; font-weight:700; margin-bottom:24px;">HOSPITALITY OPERATIONS SUPPORT</div>
+      <h1 style="font-size:clamp(26px,3.4vw,38px); line-height:1.65; font-weight:900; color:#241541; margin:0 0 28px; white-space:nowrap;">オンラインだけでは、<br>現場は回らない。</h1>
+      <p style="font-size:16px; line-height:1.7; color:#4a3a6a; font-weight:700; margin:0 0 20px;">私たちは、宿泊施設の運営に携わる皆様を裏から支える<br>『現場の職人・実務集団』です。</p>
+      <p style="font-size:14.5px; line-height:2; color:#6b5a8a; max-width:480px; margin:0 0 16px;">内装工事、旅館・民泊の消防工事から申請まで。<br>お部屋のコーディネートから家具・備品の選定・組立設置まで。<br>日々のプロ清掃、突発的な修繕まで。ハードウェアのすべてを一社完結でサポート。</p>
+      <p style="font-size:14.5px; line-height:2; color:#6b5a8a; max-width:460px; margin:0 0 40px;">また、民泊メディアにて民泊運営を後押しする情報を発信中。</p>
+      <a href="/cdn-cgi/l/email-protection#87eee9e1e8c7f4ede4e8a9edf7" class="btn-primary" style="display:inline-block; width:fit-content; background:#5f3aa0; color:#fff; font-weight:700; font-size:15px; padding:18px 44px; border-radius:100px;">無料相談・現地調査</a>
+    </div>
+    <div class="hero-visual" style="position:relative; background:#f8f5fc; overflow:hidden;">
+      <div style="position:absolute; width:420px; height:420px; top:60px; right:-80px; background:linear-gradient(135deg,#6b4ea3,#9b78d6); animation:sjBlobA 10s ease-in-out infinite; opacity:0.95;"></div>
+      <div style="position:absolute; width:280px; height:280px; bottom:-40px; left:20px; background:linear-gradient(135deg,#3a2264,#5f3aa0); animation:sjBlobB 12s ease-in-out infinite; opacity:0.9;"></div>
+    </div>
+  </div>
+
+  <!-- PAIN POINTS -->
+  <div class="pad" style="padding:100px 70px; background:#fff;">
+    <div class="fade" style="display:flex; align-items:baseline; gap:16px; margin-bottom:48px;">
+      <h2 style="font-size:28px; font-weight:900; color:#241541; margin:0;">こんなお悩みはありませんか？</h2>
+      <div style="flex:1; height:1px; background:#efe7fa;"></div>
+    </div>
+    <div class="pain-grid" style="display:grid; grid-template-columns:repeat(2,1fr); gap:2px; background:#efe7fa;">
+      <div class="fade" style="background:#fff; padding:32px 34px; display:flex; gap:16px; align-items:flex-start;">
+        <div style="flex-shrink:0; width:22px; height:22px; border-radius:50%; background:#efe7fa; color:#5f3aa0; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px;">✓</div>
+        <div style="font-size:14.5px; line-height:1.9; color:#3a2264;">物件が増えて清掃や現場管理の手が回らない</div>
+      </div>
+      <div class="fade" style="background:#fff; padding:32px 34px; display:flex; gap:16px; align-items:flex-start;">
+        <div style="flex-shrink:0; width:22px; height:22px; border-radius:50%; background:#efe7fa; color:#5f3aa0; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px;">✓</div>
+        <div style="font-size:14.5px; line-height:1.9; color:#3a2264;">家具の組み立てや配送手配など、立ち上げ実務が泥臭くて大変</div>
+      </div>
+      <div class="fade" style="background:#fff; padding:32px 34px; display:flex; gap:16px; align-items:flex-start;">
+        <div style="flex-shrink:0; width:22px; height:22px; border-radius:50%; background:#efe7fa; color:#5f3aa0; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px;">✓</div>
+        <div style="font-size:14.5px; line-height:1.9; color:#3a2264;">退去時の修繕や、ゲストによる設備破損にすぐ動ける業者がいない</div>
+      </div>
+      <div class="fade" style="background:#fff; padding:32px 34px; display:flex; gap:16px; align-items:flex-start;">
+        <div style="flex-shrink:0; width:22px; height:22px; border-radius:50%; background:#efe7fa; color:#5f3aa0; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-top:2px;">✓</div>
+        <div style="font-size:14.5px; line-height:1.9; color:#3a2264;">清掃や設備トラブルのせいでレビューが下がってしまっている</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REASONS -->
+  <div id="reasons" class="pad" style="padding:110px 70px; background:#f8f5fc;">
+    <div class="fade" style="text-align:center; margin-bottom:64px;">
+      <div style="font-size:12px; letter-spacing:0.2em; color:#7a52bf; font-weight:700; margin-bottom:14px;">WHY US</div>
+      <h2 style="font-size:28px; font-weight:900; color:#241541; margin:0;">私たちが選ばれる3つの理由</h2>
+    </div>
+    <div class="reasons-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+      <div class="fade card-hover" style="background:#fff; border-radius:8px; padding:36px 28px; box-shadow:0 4px 20px rgba(58,34,100,0.06); transition:box-shadow .2s, transform .2s;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#6b4ea3,#3a2264); color:#fff; font-size:16px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">01</div>
+        <div style="font-size:11.5px; font-weight:700; color:#7a52bf; letter-spacing:0.05em; margin-bottom:10px;">運営会社様のパートナー</div>
+        <h3 style="font-size:17px; font-weight:700; color:#241541; margin:0 0 14px; line-height:1.6;">黒衣に徹し、競合しない安心感</h3>
+        <p style="font-size:13.5px; line-height:1.9; color:#6b5a8a; margin:0;">当社はゲスト対応やOTA運用などの「運営代行」は一切行いません。貴社の大切なオーナー様や案件を奪うような競合関係にはならず、現場のインフラ（実務部隊）として黒衣に徹します。</p>
+      </div>
+      <div class="fade card-hover" style="background:#fff; border-radius:8px; padding:36px 28px; box-shadow:0 4px 20px rgba(58,34,100,0.06); transition:box-shadow .2s, transform .2s;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#6b4ea3,#3a2264); color:#fff; font-size:16px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">02</div>
+        <div style="font-size:11.5px; font-weight:700; color:#7a52bf; letter-spacing:0.05em; margin-bottom:10px;">現場の一元管理</div>
+        <h3 style="font-size:17px; font-weight:700; color:#241541; margin:0 0 14px; line-height:1.6;">バラバラな業者手配を、すべてSJに一本化</h3>
+        <p style="font-size:13.5px; line-height:1.9; color:#6b5a8a; margin:0;">工事、行政対応、家具組立、清掃、修繕まで窓口をひとつに集約。運営担当者様の煩雑な業者管理コストとコミュニケーションコストを劇的に削減します。</p>
+      </div>
+      <div class="fade card-hover" style="background:#fff; border-radius:8px; padding:36px 28px; box-shadow:0 4px 20px rgba(58,34,100,0.06); transition:box-shadow .2s, transform .2s;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#6b4ea3,#3a2264); color:#fff; font-size:16px; font-weight:700; display:flex; align-items:center; justify-content:center; margin-bottom:22px;">03</div>
+        <div style="font-size:11.5px; font-weight:700; color:#7a52bf; letter-spacing:0.05em; margin-bottom:10px;">宿泊特化の現場力</div>
+        <h3 style="font-size:17px; font-weight:700; color:#241541; margin:0 0 14px; line-height:1.6;">レビュー（売上）に直結するプロ品質</h3>
+        <p style="font-size:13.5px; line-height:1.9; color:#6b5a8a; margin:0;">多くの宿泊施設を裏から支えてきた実績から、民泊特有の「壊れにくい家具の設置」や「ビル清掃基準のベッドメイク」を熟知。現場トラブルによる低レビューを未然に防ぎます。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUSINESS -->
+  <div id="business" class="pad" style="padding:110px 70px; background:#fff; position:relative;">
+    <div class="fade" style="margin-bottom:56px;">
+      <div style="font-size:12px; letter-spacing:0.2em; color:#7a52bf; font-weight:700; margin-bottom:14px;">OUR BUSINESS</div>
+      <h2 style="font-size:26px; font-weight:900; color:#241541; margin:0 0 22px;">事業内容 ―― ハードとソフト、両輪で「3K」を変える</h2>
+      <p style="font-size:13.5px; line-height:2; color:#6b5a8a; max-width:820px; margin:0 0 20px;">清掃や現場仕事は、長らく「きつい・汚い・危険」＝3Kと呼ばれてきました。国土交通省も建設業において「給与・休暇・希望」という新3Kを掲げ、業界のイメージ刷新を推進しています。私たちも現場の実務品質（ハード面）とマーケティング事業（ソフト面）を通じて、独自の新3K――感動・かっこいい・稼げる――を体現する現場・企業ブランディングを推進しています。</p>
+      <div style="display:flex; gap:10px;">
+        <span style="font-size:12px; font-weight:700; color:#fff; background:#5f3aa0; padding:7px 18px; border-radius:100px;">感動</span>
+        <span style="font-size:12px; font-weight:700; color:#fff; background:#5f3aa0; padding:7px 18px; border-radius:100px;">カッコいい</span>
+        <span style="font-size:12px; font-weight:700; color:#fff; background:#5f3aa0; padding:7px 18px; border-radius:100px;">稼げる</span>
+      </div>
+    </div>
+    <div class="business-grid" style="display:grid; grid-template-columns:1.3fr 1fr; gap:40px;">
+      <div class="fade">
+        <div style="font-size:12px; font-weight:700; color:#241541; letter-spacing:0.15em; margin-bottom:20px;">HARD｜現場の実務力</div>
+        <div class="hard-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+          <div style="border:1px solid #efe7fa; border-radius:6px; padding:22px 20px;">
+            <div style="font-size:14px; font-weight:700; color:#3a2264; margin-bottom:10px; line-height:1.5;">内装リフォーム・工事</div>
+            <div style="font-size:12.5px; line-height:1.8; color:#6b5a8a;">旅館業・民泊基準に適合する間取り変更や消防設備工事</div>
+          </div>
+          <div style="border:1px solid #efe7fa; border-radius:6px; padding:22px 20px;">
+            <div style="font-size:14px; font-weight:700; color:#3a2264; margin-bottom:10px; line-height:1.5;">立ち上げ代行（家具組立）</div>
+            <div style="font-size:12.5px; line-height:1.8; color:#6b5a8a;">家具・家電の選定から配送受け取り、組み立て、ゴミ処分まで丸投げ</div>
+          </div>
+          <div style="border:1px solid #efe7fa; border-radius:6px; padding:22px 20px;">
+            <div style="font-size:14px; font-weight:700; color:#3a2264; margin-bottom:10px; line-height:1.5;">プロ品質の清掃代行</div>
+            <div style="font-size:12.5px; line-height:1.8; color:#6b5a8a;">オフィスビル清掃で培ったノウハウによる、高レビュー維持のためのベッドメイクと清掃</div>
+          </div>
+          <div style="border:1px solid #efe7fa; border-radius:6px; padding:22px 20px;">
+            <div style="font-size:14px; font-weight:700; color:#3a2264; margin-bottom:10px; line-height:1.5;">即応メンテナンス（修繕）</div>
+            <div style="font-size:12.5px; line-height:1.8; color:#6b5a8a;">運営中のトラブル（水漏れ、鍵の不具合、壁の傷など）への迅速な小修繕対応</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade">
+        <div style="font-size:12px; font-weight:700; color:#241541; letter-spacing:0.15em; margin-bottom:20px;">SOFT｜運営メディア運用</div>
+        <a href="https://media.sj-jp.example" target="_blank" rel="noopener" class="soft-link" style="display:block; background:#241541; border-radius:6px; padding:24px 22px; transition:background .2s;">
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div>
+              <div style="font-size:13.5px; font-weight:700; color:#fff; margin-bottom:6px; line-height:1.5;">運営お役立ち情報の発信</div>
+              <div style="font-size:12.5px; line-height:1.8; color:#c9b8e8;">民泊・簡易宿所を運営する上で役立つノウハウや最新情報を発信</div>
+            </div>
+            <div>
+              <div style="font-size:13.5px; font-weight:700; color:#fff; margin-bottom:6px; line-height:1.5;">民泊運営代行会社の紹介</div>
+              <div style="font-size:12.5px; line-height:1.8; color:#c9b8e8;">信頼できる運営代行会社をメディア上でご紹介</div>
+            </div>
+            <div>
+              <div style="font-size:13.5px; font-weight:700; color:#fff; margin-bottom:6px; line-height:1.5;">おすすめ宿泊施設の紹介</div>
+              <div style="font-size:12.5px; line-height:1.8; color:#c9b8e8;">魅力ある宿泊施設をピックアップして紹介</div>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center; gap:8px; margin-top:20px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.14); font-size:12.5px; font-weight:700; color:#fff;">メディアを見る <span style="color:#c9b8e8;">→</span></div>
+        </a>
+        <p style="font-size:11.5px; color:#8a7aa8; margin-top:14px; line-height:1.8;">※メディア運用・情報発信のみで、ゲスト対応やOTA運用の代行は行いません。</p>
+      </div>
+    </div>
+
+    <div class="fade" style="margin-top:48px;">
+      <div style="font-size:12px; font-weight:700; color:#241541; letter-spacing:0.15em; margin-bottom:20px;">メディア人気記事</div>
+      <div class="articles-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+        <a href="https://media.sj-jp.example/articles/1" target="_blank" rel="noopener" class="article-card" style="display:block; border:1px solid #efe7fa; border-radius:8px; overflow:hidden; background:#fff; transition:box-shadow .2s;">
+          <div style="width:100%; aspect-ratio:16/9; background:repeating-linear-gradient(135deg,#f0eaf9,#f0eaf9 10px,#e6ddf5 10px,#e6ddf5 20px); display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:monospace; font-size:11px; color:#9b7fc9;">記事サムネイル</span>
+          </div>
+          <div style="padding:16px 18px;">
+            <div style="font-size:13.5px; font-weight:700; color:#3a2264; line-height:1.6;">民泊の消防法令適合ってなに？申請の流れと注意点</div>
+          </div>
+        </a>
+        <a href="https://media.sj-jp.example/articles/2" target="_blank" rel="noopener" class="article-card" style="display:block; border:1px solid #efe7fa; border-radius:8px; overflow:hidden; background:#fff; transition:box-shadow .2s;">
+          <div style="width:100%; aspect-ratio:16/9; background:repeating-linear-gradient(135deg,#f0eaf9,#f0eaf9 10px,#e6ddf5 10px,#e6ddf5 20px); display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:monospace; font-size:11px; color:#9b7fc9;">記事サムネイル</span>
+          </div>
+          <div style="padding:16px 18px;">
+            <div style="font-size:13.5px; font-weight:700; color:#3a2264; line-height:1.6;">失敗しない家具選び。壊れにくい民泊向け家具の条件</div>
+          </div>
+        </a>
+        <a href="https://media.sj-jp.example/articles/3" target="_blank" rel="noopener" class="article-card" style="display:block; border:1px solid #efe7fa; border-radius:8px; overflow:hidden; background:#fff; transition:box-shadow .2s;">
+          <div style="width:100%; aspect-ratio:16/9; background:repeating-linear-gradient(135deg,#f0eaf9,#f0eaf9 10px,#e6ddf5 10px,#e6ddf5 20px); display:flex; align-items:center; justify-content:center;">
+            <span style="font-family:monospace; font-size:11px; color:#9b7fc9;">記事サムネイル</span>
+          </div>
+          <div style="padding:16px 18px;">
+            <div style="font-size:13.5px; font-weight:700; color:#3a2264; line-height:1.6;">レビュー評価を下げない、プロのベッドメイク術</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="results" class="pad" style="padding:100px 70px; background:#241541;">
+    <div class="fade" style="margin-bottom:48px;">
+      <div style="font-size:12px; letter-spacing:0.2em; color:#9b78d6; font-weight:700; margin-bottom:14px;">TRACK RECORD</div>
+      <h2 style="font-size:26px; font-weight:900; color:#fff; margin:0;">実績</h2>
+    </div>
+    <div class="results-grid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,0.14);">
+      <div class="fade" style="background:#241541; padding:32px 26px;">
+        <div style="font-size:13.5px; line-height:1.9; color:#e4d9f5;">民泊運営会社様と業務提携。全国60物件・200室の現場実務をサポート。</div>
+      </div>
+      <div class="fade" style="background:#241541; padding:32px 26px;">
+        <div style="font-size:13.5px; line-height:1.9; color:#e4d9f5;">上場企業の新規・宿泊事業参入における「現場構築」を半年で5物件全面バックアップ。</div>
+      </div>
+      <div class="fade" style="background:#241541; padding:32px 26px;">
+        <div style="font-size:13.5px; line-height:1.9; color:#e4d9f5;">首都圏マンションの消防・行政・現場設置をワンストップでスピード実施。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPANY PROFILE -->
+  <div id="company" class="pad" style="padding:100px 70px; background:#f8f5fc;">
+    <div class="fade" style="margin-bottom:44px;">
+      <div style="font-size:12px; letter-spacing:0.2em; color:#7a52bf; font-weight:700; margin-bottom:14px;">COMPANY</div>
+      <h2 style="font-size:26px; font-weight:900; color:#241541; margin:0;">会社概要</h2>
+    </div>
+    <div class="fade" style="max-width:780px; display:flex; flex-direction:column; background:#fff; border-radius:8px; overflow:hidden; border:1px solid #efe7fa;">
+      <div style="display:grid; grid-template-columns:160px 1fr; padding:22px 30px; border-bottom:1px solid #efe7fa;">
+        <div style="font-size:13px; font-weight:700; color:#7a52bf;">会社名</div>
+        <div style="font-size:14px; color:#3a2264;">株式会社SJ</div>
+      </div>
+      <div style="display:grid; grid-template-columns:160px 1fr; padding:22px 30px; border-bottom:1px solid #efe7fa;">
+        <div style="font-size:13px; font-weight:700; color:#7a52bf;">設立</div>
+        <div style="font-size:14px; color:#3a2264;">2016年7月14日</div>
+      </div>
+      <div style="display:grid; grid-template-columns:160px 1fr; padding:22px 30px; border-bottom:1px solid #efe7fa;">
+        <div style="font-size:13px; font-weight:700; color:#7a52bf;">所在地</div>
+        <div style="font-size:14px; color:#3a2264; line-height:1.8;">〒141-0022<br>東京都品川区東五反田1丁目4番13号 国分ビル1階</div>
+      </div>
+      <div style="display:grid; grid-template-columns:160px 1fr; padding:22px 30px; border-bottom:1px solid #efe7fa;">
+        <div style="font-size:13px; font-weight:700; color:#7a52bf;">事業内容</div>
+        <div style="font-size:14px; color:#3a2264; line-height:1.8;">宿泊施設向け現場実務支援（内装工事・行政対応、立ち上げ代行、清掃代行、メンテナンス）、民泊運営メディアの運用</div>
+      </div>
+      <div style="display:grid; grid-template-columns:160px 1fr; padding:22px 30px;">
+        <div style="font-size:13px; font-weight:700; color:#7a52bf;">連絡先</div>
+        <div style="font-size:14px; color:#3a2264;"><a href="/cdn-cgi/l/email-protection#8ee7e0e8e1cefde4ede1a0e4fe" style="color:#3a2264; text-decoration:underline;"><span class="__cf_email__" data-cfemail="bdd4d3dbd2fdced7ded293d7cd">[email&#160;protected]</span></a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA + DISCLAIMER -->
+  <div class="pad" style="padding:100px 70px; background:#fff; text-align:center;">
+    <div class="fade" style="max-width:680px; margin:0 auto 44px; background:#f8f5fc; border-radius:6px; padding:24px 30px; text-align:left;">
+      <div style="font-size:12px; font-weight:700; color:#5f3aa0; margin-bottom:10px;">※お問い合わせ前にお読みください</div>
+      <div style="font-size:12.5px; line-height:1.9; color:#6b5a8a;">当社では、ゲスト様からの問い合わせ対応やサイト運用といった「運営代行（ソフト面）」の業務は行っておりません。私たちが特化しているのは、「行政対応」「工事」「家具設置」「清掃」「修繕」という現場（ハード面）の構築と維持です。</div>
+    </div>
+    <h2 style="font-size:24px; font-weight:900; color:#241541; margin:0 0 32px;">現場のことは、私たちにお任せください。</h2>
+    <a href="/cdn-cgi/l/email-protection#472e29212807342d2428692d37" class="btn-primary" style="display:inline-block; background:#5f3aa0; color:#fff; font-weight:700; font-size:15px; padding:18px 48px; border-radius:100px;">無料相談・現地調査</a>
+    <div style="margin-top:48px; font-size:12px; color:#9a8ab8;">株式会社SJ</div>
+  </div>
+</section>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  var els = document.querySelectorAll('.fade');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.15 });
+  els.forEach(function(el){ io.observe(el); });
+</script>
+
+</body>
+</html>
